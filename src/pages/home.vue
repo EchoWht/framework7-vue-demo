@@ -11,12 +11,14 @@
       </f7-nav-right>
       <f7-nav-title-large sliding>My App</f7-nav-title-large>
     </f7-navbar>
-
+    <!-- Toolbar-->
+    <f7-toolbar bottom>
+      <f7-link>Left Link</f7-link>
+      <f7-link>Right Link</f7-link>
+    </f7-toolbar>
     <!-- Page content-->
     <f7-block strong>
-      <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-
-      <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+      <p>Here is your blank Framework7 app. Let's see what we have here.</p>
     </f7-block>
 
     <f7-block-title>Navigation</f7-block-title>

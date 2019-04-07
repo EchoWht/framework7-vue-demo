@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/cordova-plugin-wkwebview-engine/-/cordova-plugin-wkwebview-engine-1.1.4.tgz",
   "_shasum": "11b9cfa114ec0525c5c63e67a24eab4157034060",
   "_spec": "cordova-plugin-wkwebview-engine",
-  "_where": "/Users/wanghaotian/cordova-project/framework7-vue-demo/cordova",
+  "_where": "/Users/wanghaotian/cordova-project/framework7-vue-demo-route/cordova",
   "author": {
     "name": "Apache Cordova"
   },

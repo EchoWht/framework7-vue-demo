@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const WorkboxPlugin = require('workbox-webpack-plugin');
+
 
 const path = require('path');
 
@@ -196,16 +196,9 @@ module.exports = {
         from: resolvePath('src/static'),
         to: resolvePath(isCordova ? 'cordova/www/static' : 'www/static'),
       },
-      {
-        from: resolvePath('src/manifest.json'),
-        to: resolvePath('www/manifest.json'),
-      },
+
     ]),
-    ...(!isCordova ? [
-      new WorkboxPlugin.InjectManifest({
-        swSrc: resolvePath('src/service-worker.js'),
-      })
-    ] : []),
+
 
   ],
 };

@@ -8,19 +8,19 @@
   },
   "installed_plugins": {
     "cordova-plugin-keyboard": {
-      "PACKAGE_NAME": "com.blskye.fw7vue"
+      "PACKAGE_NAME": "com.blskye.f7v"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.blskye.fw7vue"
+      "PACKAGE_NAME": "com.blskye.f7v"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.blskye.fw7vue"
+      "PACKAGE_NAME": "com.blskye.f7v"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.blskye.fw7vue"
+      "PACKAGE_NAME": "com.blskye.f7v"
     },
     "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "com.blskye.fw7vue"
+      "PACKAGE_NAME": "com.blskye.f7v"
     }
   },
   "dependent_plugins": {}

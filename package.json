@@ -7,25 +7,24 @@
   "license": "UNLICENSED",
   "framework7": {
     "type": [
-      "web",
-      "pwa",
-      "cordova"
+      "cordova",
+      "web"
     ],
     "name": "My App",
     "framework": "vue",
-    "template": "tabs",
+    "template": "single-view",
     "bundler": "webpack",
     "cssPreProcessor": "scss",
     "customColor": true,
     "iconFonts": true,
-    "pkg": "com.blskye.fw7vue",
+    "pkg": "com.blskye.f7v",
     "platform": [
       "ios",
       "android"
     ],
     "cordovaFolder": "cordova",
     "color": "ffd900",
-    "cwd": "/Users/wanghaotian/cordova-project/framework7-vue-demo"
+    "cwd": "/Users/wanghaotian/cordova-project/framework7-vue-demo-route"
   },
   "scripts": {
     "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
@@ -88,7 +87,6 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1",
-    "workbox-webpack-plugin": "^4.2.0"
+    "webpack-dev-server": "^3.2.1"
   }
 }

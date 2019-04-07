@@ -2,23 +2,16 @@
 import HomePage from '../pages/home.vue';
 import AboutPage from '../pages/about.vue';
 import FormPage from '../pages/form.vue';
-import CatalogPage from '../pages/catalog.vue';
-import ProductPage from '../pages/product.vue';
-import SettingsPage from '../pages/settings.vue';
+
 
 import DynamicRoutePage from '../pages/dynamic-route.vue';
 import RequestAndLoad from '../pages/request-and-load.vue';
 import NotFoundPage from '../pages/404.vue';
-import DataTable from '../pages/data-table';
 
 var routes = [
   {
     path: '/',
     component: HomePage,
-  },
-  {
-    path: '/data-table',
-    component: DataTable,
   },
   {
     path: '/about/',
@@ -28,18 +21,7 @@ var routes = [
     path: '/form/',
     component: FormPage,
   },
-  {
-    path: '/catalog/',
-    component: CatalogPage,
-  },
-  {
-    path: '/product/:id/',
-    component: ProductPage,
-  },
-  {
-    path: '/settings/',
-    component: SettingsPage,
-  },
+
 
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

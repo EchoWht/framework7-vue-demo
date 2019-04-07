@@ -45,6 +45,15 @@ Framework7 app created with following options:
 
 This is a PWA. Don't forget to check what is inside of your `service-worker.js`. It is also recommended that you disable service worker (or enable "Update on reload") in browser dev tools during development.
 
+在app.vue中关闭
+
+```javascript
+            / Register service worker
+          // serviceWorker: this.$device.cordova ? {} : {
+          //   path: '/service-worker.js',
+          // },
+```
+
 ## Cordova
 
 Cordova project located in `cordova` folder. You shouldn't modify content of `cordova/www` folder. Its content will be correctly generated when you call `npm run cordova-build-prod`.
@@ -75,3 +84,17 @@ framework7 generate-assets --ui
 
 Love Framework7? Support project by donating or pledging on patreon:
 https://patreon.com/vladimirkharlampidi
+
+
+## android开启状态栏
+
+app.vue
+
+```javascript
+   // Cordova Statusbar settings
+      statusbar: {
+        overlay: this.$device.cordova && this.$device.ios || 'auto',
+        iosOverlaysWebView: true,
+        androidOverlaysWebView: true,//true 时开启沉浸式状态栏，默认为false，false时文字和背景都为灰色，需要修改
+      }
+```
