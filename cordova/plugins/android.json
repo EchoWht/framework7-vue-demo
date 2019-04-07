@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-keyboard": {
+      "PACKAGE_NAME": "com.blskye.fw7vue"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.blskye.fw7vue"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.blskye.fw7vue"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.blskye.fw7vue"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "com.blskye.fw7vue"
+    }
+  },
+  "dependent_plugins": {}
+}
