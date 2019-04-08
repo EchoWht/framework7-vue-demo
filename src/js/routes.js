@@ -7,6 +7,7 @@ import FormPage from '../pages/form.vue';
 import DynamicRoutePage from '../pages/dynamic-route.vue';
 import RequestAndLoad from '../pages/request-and-load.vue';
 import NotFoundPage from '../pages/404.vue';
+import Statusbar from '../pages/statusbar.vue';
 
 var routes = [
   {
@@ -76,6 +77,10 @@ var routes = [
         );
       }, 1000);
     },
+  },
+  {
+    path: '/statusbar/',
+    component: Statusbar,
   },
   {
     path: '(.*)',

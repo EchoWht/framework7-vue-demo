@@ -88,6 +88,10 @@
           id: 'com.blskye.f7v', // App bundle ID
           name: 'My App', // App name
           theme: 'auto', // Automatic theme detection
+          // view: {  // 注意这里 pushState 是 view 的属性，直接是直接挂在 framework7 上
+          //   pushState: true,
+          //   pushStateSeparator: '#',
+          // },
           // App root data
           data: function () {
             return {
@@ -125,7 +129,26 @@
     methods: {
       alertLoginData() {
         this.$f7.dialog.alert('Username: ' + this.username + '<br>Password: ' + this.password);
+      },
+      //android 后退按钮
+      onBackKeyDown () {
+        //this.$f7.dialog.alert("ok");
+        // Your logic
+        let currentView=this.$f7.views.current;
+        if(currentView.history.length>1)
+        {
+          currentView.router.back({});//非首页返回上一级
+        }
+        else{
+          //navigator.app.exitApp();//首页点返回键退出应用
+        }
       }
+    },
+    created () {
+      document.addEventListener("backbutton", this.onBackKeyDown, false);
+    },
+    beforeDestroy () {
+      document.removeEventListener("backbutton", this.onBackKeyDown);
     },
     mounted() {
       this.$f7ready((f7) => {
@@ -134,6 +157,8 @@
           cordovaApp.init(f7);
         }
         // Call F7 APIs here
+        f7.statusbar.setTextColor("white");
+        f7.statusbar.setBackgroundColor("#ffd900");
       });
     }
   }
