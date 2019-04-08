@@ -12,10 +12,15 @@
       <f7-nav-title-large sliding>My App</f7-nav-title-large>
     </f7-navbar>
     <!-- Toolbar-->
-    <f7-toolbar bottom>
-      <f7-link>Left Link</f7-link>
-      <f7-link>Right Link</f7-link>
-    </f7-toolbar>
+    <!--<f7-toolbar bottom>-->
+      <!--<f7-link>Left Link</f7-link>-->
+      <!--<f7-link>Right Link</f7-link>-->
+    <!--</f7-toolbar>-->
+    <!--<f7-toolbar bottom tabbar>-->
+      <!--<f7-link tab-link="#tab-1" tab-link-active text="Tab 1" icon-ios="f7:email_fill" icon-aurora="f7:email_fill" icon-md="material:email"></f7-link>-->
+      <!--<f7-link tab-link href="/statusbar/" text="Tab 2" icon-ios="f7:today_fill" icon-aurora="f7:today_fill" icon-md="material:today"></f7-link>-->
+      <!--<f7-link tab-link="#tab-3" text="Tab 3" icon-ios="f7:cloud_fill" icon-aurora="f7:cloud_fill" icon-md="material:file_upload"></f7-link>-->
+    <!--</f7-toolbar>-->
     <!-- Page content-->
     <f7-block strong>
       <p>Here is your blank Framework7 app. Let's see what we have here.</p>
@@ -64,9 +69,17 @@
         title="Request Data & Load"
         link="/request-and-load/user/123456/"
       ></f7-list-item>
+      <!--<f7-list-item-->
+            <!--title="statusbar"-->
+            <!--link="/statusbar/"-->
+    <!--&gt;</f7-list-item>-->
+      <!--<f7-list-item-->
+              <!--title="tabs-routable"-->
+              <!--link="/tabs-routable/"-->
+      <!--&gt;</f7-list-item>-->
       <f7-list-item
-              title="Request Data & Load"
-              link="/statusbar/"
+              title="Demo"
+              link="/demo/"
       ></f7-list-item>
     </f7-list>
 
