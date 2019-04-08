@@ -5,8 +5,19 @@
       <p>Sorry</p>
       <p>Requested content not found.</p>
     </f7-block>
+    <f7-block strong>
+      <ul>
+        <li><b>Url:</b> {{$f7route.url}}</li>
+      </ul>
+    </f7-block>
   </f7-page>
 </template>
 <script>
-  export default {};
+  export default {
+    data(){
+      return {
+        
+      }
+    }
+  };
 </script>
