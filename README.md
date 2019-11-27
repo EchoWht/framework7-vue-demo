@@ -98,3 +98,5 @@ app.vue
         androidOverlaysWebView: true,//true 时开启沉浸式状态栏，默认为false，false时文字和背景都为灰色，需要修改
       }
 ```
+
+## cordova platform add android 
